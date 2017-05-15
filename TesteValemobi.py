@@ -9,9 +9,9 @@ print "CLIENTES\n"
 
 #SELECT NO BANCO - vl_total > 560 e id_customer entre 1500 e 2700 
 cursor = conn.cursor()
-cursor.execute ("SELECT * FROM tb_customer_account where vl_total > 560 and id_customer >=1500 and id_customer <=2700 order by vl_total") 
+cursor.execute ("SELECT * FROM tb_customer_account where vl_total > 560 and id_customer between 1500 and 2700 order by vl_total") 
 
-#VARIAVES PARA VALOR TOTAL E QUANTIDADE DE REGISTROS ENTRE AS ESPECIFICACOES NO SELECT
+#VARIAVES PARA VALOR TOTAL E CONTADOR DE CLIENTES UTILIZADOS PARA O CÁLCULO DA MEDIA
 total = 0 
 i = 0
 
@@ -20,7 +20,7 @@ for result in cursor:
 	total += result[4]
 	i+=1
 
-	print 'Id: %1.2d	CPF: %13.15s	Nome: %2.13s	Status da Conta: %3.5s	 Valor Total: R$%2.2f ' % (result[0], result[1], result[2], result[3], result[4])
+	print 'Id: %1.2d	CPF/CNPJ: %13.15s	Nome: %2.13s	Status da Conta: %3.5s	 Valor Total: R$%2.2f ' % (result[0], result[1], result[2], result[3], result[4])
 
 cursor.close()	
 
