@@ -28,7 +28,7 @@ CREATE TABLE `tb_customer_account` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `tb_customer_account`
+-- Inserindo dados da tabela `tb_customer_account`
 --
 
 INSERT INTO `tb_customer_account` (`id_customer`, `cpf_cnpj`, `nm_customer`, `is_active`, `vl_total`) VALUES
