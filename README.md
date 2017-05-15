@@ -1,11 +1,11 @@
-# Valemobi---Teste-Online
+# Valemobi - Teste Online
 
 Teste online para vaga de Estágio da empresa Valemobi.
 
 
     °Arquivo batch em Python
 
-    °Dados persistido no MySQL
+    °Dados persistidos no MySQL
 
 # Desafio Proposto 
 °Criar a tabela tb_customer_account 
