@@ -14,7 +14,7 @@ Teste online para vaga de Estágio da empresa Valemobi.
   
     cpf_cnpj - CPF ou CNPJ do Cliente
   
-    nm_customer -Nome do Cliente
+    nm_customer - Nome do Cliente
   
     is_active - Indica se o cliente está ativo ou não
   
