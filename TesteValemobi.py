@@ -3,7 +3,7 @@ import MySQLdb
 import os
 
 #CONEXAO COM O BANCO
-conn = MySQLdb.connect(host = "localhost", user = "root", passwd = "", db = "valemobi") #Conexao com o banco
+conn = MySQLdb.connect(host = "localhost", user = "root", passwd = "", db = "valemobi") #CONEXAO COM O BANCO
 
 print "CLIENTES\n"
 
